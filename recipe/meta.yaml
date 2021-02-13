@@ -6,8 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/slac-lcls/{{ name }}/archive/v{{ version }}.tar.gz 
-  sha256: 1eeadfdc98740a5f89e1909b5e4ba49a3bd2ef4b75a4d16a39cb99a1188a6a89
+  - url: https://github.com/slac-lcls/{{ name }}/archive/v{{ version }}.tar.gz 
+    sha256: 1eeadfdc98740a5f89e1909b5e4ba49a3bd2ef4b75a4d16a39cb99a1188a6a89
+  - path: LICENSE.md
 
 build:
   skip: True  # [win or osx]
