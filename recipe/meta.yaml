@@ -1,5 +1,5 @@
 {% set name = "networkfox" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/slac-lcls/{{ name }}/archive/v{{ version }}.tar.gz 
-    sha256: c487dd3d40d44b46c0e580e8649523b6681e04f6b83b3bf24188e6cda6121f0a 
+    sha256: 058d18f4eafb0b077aa832c724e4ac05159ae0aed0477f14b2bf25e705e3dc63 
   - path: LICENSE.md
 
 build:
