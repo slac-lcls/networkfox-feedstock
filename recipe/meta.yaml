@@ -9,11 +9,13 @@ source:
   - url: https://github.com/slac-lcls/{{ name }}/archive/v{{ version }}.tar.gz 
     sha256: 058d18f4eafb0b077aa832c724e4ac05159ae0aed0477f14b2bf25e705e3dc63 
   - path: LICENSE.md
+  - patches:
+    - version.patch
 
 build:
   skip: True  # [win or osx]
   noarch: python 
-  number: 0
+  number: 2
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
