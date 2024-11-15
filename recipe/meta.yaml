@@ -1,16 +1,14 @@
 {% set name = "networkfox" %}
-{% set version = "0.0.8" %}
+{% set version = "v0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  - url: https://github.com/slac-lcls/{{ name }}/archive/v{{ version }}.tar.gz 
-    sha256: 058d18f4eafb0b077aa832c724e4ac05159ae0aed0477f14b2bf25e705e3dc63 
+  - url: file:///sdf/group/lcls/ds/ana/sw/source_files/{{ name }}-{{ version }}.tar.gz
+    sha256: 567d9d7d3460b7af718c61652d74ceea5c8ae2e0cfdbfae6da37e507e9528d6b 
   - path: LICENSE.md
-  - patches:
-    - version.patch
 
 build:
   skip: True  # [win or osx]
